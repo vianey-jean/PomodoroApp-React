@@ -45,13 +45,13 @@ const TimerDisplay = ({ timerMode,
     setButtonText( buttonText === 'START'
                     || buttonText === 'RESUME'
                       ? 'PAUSE'
-                      : 'RESUME'
+                      : 'RESUMER'
                   )
   }
 
   let timesUpMsg = timerMode === 'pomo'
                   ? 'time for a break'
-                  : 'back to work!'
+                  : 'Fin du Pause !'
 
   let timeText = timeLeft === '0:00'
                   ? timesUpMsg
