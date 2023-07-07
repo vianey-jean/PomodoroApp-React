@@ -19,7 +19,7 @@ function App() {
   const [ accentColor, setAccentColor ] = useState('default') // options: default, blue, purple
   const [ secondsLeft, setSecondsLeft] = useState(pomoLength * 60)
   const [ isActive, setIsActive ] = useState(false)
-  const [ buttonText, setButtonText ] = useState('START')
+  const [ buttonText, setButtonText ] = useState('DEMARRER')
 
   const [ volume, setVolume ] = useState(1)
   const [ timesUp ] = useSound(timesUpSfx, {
