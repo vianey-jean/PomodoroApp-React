@@ -45,7 +45,7 @@ const TimerDisplay = ({ timerMode,
     setButtonText( buttonText === 'START'
                     || buttonText === 'RESUME'
                       ? 'PAUSE'
-                      : 'RESUMER'
+                      : 'RESUME'
                   )
   }
 
