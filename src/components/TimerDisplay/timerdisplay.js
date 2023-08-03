@@ -50,7 +50,7 @@ const TimerDisplay = ({ timerMode,
   }
 
   let timesUpMsg = timerMode === 'pomo'
-                  ? 'Temps pour une Pause'
+                  ? 'En Pause'
                   : 'Fin du Pause !'
 
   let timeText = timeLeft === '0:00'
