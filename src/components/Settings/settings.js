@@ -62,7 +62,7 @@ const Settings = ({ visible,
       <div className="preferences preferences--visible">
       <div className="preferences__pane">
         <Button type="close" buttonText="×" toggleVisibility={toggleSettingsVisibility} />
-        <h2>Parametres</h2>
+        <h2>Paramètres</h2>
         <form onSubmit={applySettings}>
           <div className="pane__time-settings">
             <h3>Temps (Minutes)</h3>
@@ -72,7 +72,7 @@ const Settings = ({ visible,
               <label htmlFor="short-break">Courte Pause</label>
               <input type="number" name="shortBreak" id="short-break" min="1" max="360" defaultValue={shortLength} />
               <label htmlFor="long-break">Longue Pause</label>
-              <input type="number" name="longBreak" id="long-break" min="15" max="720" defaultValue={longLength} />
+              <input type="number" name="longBreak" id="long-break" min="5" max="720" defaultValue={longLength} />
             </div>
           </div>
 
@@ -97,7 +97,7 @@ const Settings = ({ visible,
             <input type="radio" id="colorPref3" name="color" value="purple" defaultChecked={accentColor === 'purple'} />
             <label htmlFor="colorPref3" className="color-preference__purple"></label>
           </div>
-          <Button type="apply" buttonText="Apply" />
+          <Button type="apply" buttonText="Valider" />
         </form>
       </div>
     </div>
